@@ -10,6 +10,15 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            url 'https://storage.googleapis.com/download.flutter.io'
+        }
+
+        def flutterLocalRepoLocal = "$rootDir/flutter"
+        maven {
+            // Local folder for flutter development. Set `flutterLocalRepo` in local gradle properties
+            url "$flutterLocalRepoLocal/build/host/outputs/repo"
+        }
     }
 }
 rootProject.name = "ScrollviewSanityCheck"
