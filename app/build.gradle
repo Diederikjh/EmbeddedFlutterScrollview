@@ -32,14 +32,18 @@ android {
 
 dependencies {
 
-    implementation 'androidx.appcompat:appcompat:1.5.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.lifecycle:lifecycle-livedata:2.5.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel:2.5.1'
-    implementation 'androidx.navigation:navigation-fragment:2.5.1'
-    implementation 'androidx.navigation:navigation-ui:2.5.1'
+    implementation 'androidx.navigation:navigation-fragment:2.5.2'
+    implementation 'androidx.navigation:navigation-ui:2.5.2'
     implementation 'com.google.android.material:material:1.6.1'
-    debugImplementation 'guru.diederik.my_flutter:flutter_debug:1.0'
+
+    debugImplementation 'guru.diederik.my_flutter:flutter:1.0:debug'
+    profileImplementation 'guru.diederik.my_flutter:flutter:1.0:profile'
+    releaseImplementation 'guru.diederik.my_flutter:flutter:1.0:release'
+
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
