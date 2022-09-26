@@ -28,6 +28,7 @@ android {
     buildFeatures {
         viewBinding true
     }
+    namespace 'guru.diederik.scrollviewsanitycheck'
 }
 
 dependencies {
@@ -41,8 +42,8 @@ dependencies {
     implementation 'com.google.android.material:material:1.6.1'
 
     debugImplementation 'guru.diederik.my_flutter:flutter:1.0:debug'
-    profileImplementation 'guru.diederik.my_flutter:flutter:1.0:profile'
-    releaseImplementation 'guru.diederik.my_flutter:flutter:1.0:release'
+//    profileImplementation 'guru.diederik.my_flutter:flutter:1.0:profile'
+//    releaseImplementation 'guru.diederik.my_flutter:flutter:1.0:release'
 
 
     testImplementation 'junit:junit:4.13.2'
