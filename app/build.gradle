@@ -20,6 +20,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+        profile {
+            initWith debug
+        }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -41,10 +44,9 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui:2.5.2'
     implementation 'com.google.android.material:material:1.6.1'
 
-    debugImplementation 'guru.diederik.my_flutter:flutter:1.0:debug'
-//    profileImplementation 'guru.diederik.my_flutter:flutter:1.0:profile'
-//    releaseImplementation 'guru.diederik.my_flutter:flutter:1.0:release'
-
+    debugImplementation 'guru.diederik.my_flutter:flutter_debug:1.0'
+    releaseImplementation 'guru.diederik.my_flutter:flutter_release:1.0'
+    profileImplementation 'guru.diederik.my_flutter:flutter_profile:1.0'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
